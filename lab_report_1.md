@@ -1,6 +1,6 @@
 # Lab Report 1
 
-## Objective: Log into a course-specific account on ieng6.
+## Objective: Logging into a course-specific account on ieng6.
 
 ## Requirements: * VSCode or Terminal. * Git bash installed on VSCode (if using Windows)
 
