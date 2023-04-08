@@ -37,9 +37,9 @@
       <img src="password.png" width="500" height="140">
       
   * Congratulations! Now, you're remotely connected to your account.
-  
+     
+      <img src="connected.png" width="600" height="220">
       
-
 > ### Step 3 - Trying some commands**
   * 
 
