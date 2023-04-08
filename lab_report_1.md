@@ -38,7 +38,7 @@
       
   * Congratulations! Now, you're remotely connected to your account.
   
-  
+      
 
 > ### Step 3 - Trying some commands**
   * 
