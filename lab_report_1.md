@@ -41,30 +41,28 @@
       <img src="connected.png" width="600" height="220">
       
 > ### Step 3 - Trying some commands
-*(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal by clicking on the delete button shown below to avoid the Permission Denied error.)*
-
-       ![Image](killterminal.png)
+*(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal to avoid the Permission Denied error.)*
       
-  * Before we try some commands, let's upload a text file to your course-specific account.
+*(Before we try some commands, let's upload a text file to your course-specific account.)*
 
   * Create an empty folder on your computer and name it something like: CSE15L2023
-  * Now, open this folder using ctrl or command + o or by clicking on File -> Open menu option.
+  * Now, open this folder in VScode using ctrl or command + o or by clicking on File -> Open menu option.
   * Inside this folder, create a new text file as shown below.
   
-      <img src="newfile.png" width="600" height="220">
+      <img src="newfile.png" width="300" height="110">
       
   * Give a name to it something like: helloworld.txt (make sure to append the name with '.txt' extension)
 
-      <img src="helloworld.png" width="600" height="220">
+      <img src="helloworld.png" width="300" height="110">
       
   * Type in anything you want in this text file (make sure to hit enter at the end to create a new empty line for readability purposes in the Terminal later).
 
-      <img src="typing.png" width="600" height="220">
+      <img src="typing.png" width="250" height="110">
       
   * Save everything by using ctrl or command + s or by clicking on File -> Save menu option.
   * Copy and paste (or type) the following command in your Terminal window: scp helloworld.txt cs15lsp23zz@ieng6.ucsd.edu:~/
 
-      <img src="scp.png" width="600" height="220">
+      <img src="scp.png" width="500" height="120">
 
   * Replace "zz" in the command with the letters in your course-specific account and press Enter.
   * You will be prompted to enter your account password, type in your password and press Enter.
@@ -75,16 +73,18 @@
 
   * To see your current working directory, type the command: pwd
   
-       <img src="pwd.png" width="600" height="220">
+       <img src="pwd.png" width="500" height="280">
   
   * To list the contents in this directory, type the command: ls
 
-       <img src="ls.png" width="600" height="220">
+       <img src="ls.png" width="500" height="300">
 
   * To print out the contents of a text file, type the command: cat helloworld.txt (Note: file name might be different for you)
  
-       <img src="cat.png" width="600" height="220">
+       <img src="cat.png" width="500" height="320">
+
+
  
-> ## Congratulations! you have successfully completed all the objectives.
+> ## Congratulations! you have successfully completed all of the objectives.
 
 
