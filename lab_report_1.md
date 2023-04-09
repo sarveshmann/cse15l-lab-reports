@@ -90,6 +90,5 @@
  
        <img src="cat.png" width="500" height="320">
 
-
  
 > ## Congratulations! you have successfully completed all of the objectives.
