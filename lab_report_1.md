@@ -41,12 +41,11 @@
       <img src="connected.png" width="600" height="220">
       
 > ### Step 3 - Trying some commands
+*(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal by clicking on the delete button shown below to avoid the Permission Denied error.)*
 
-*(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal by clicking on the delete button shown below to avoid the 'Permission Denied' error.)*
+       ![Image](killterminal.png)
       
-      <img src="killterminal.png" width="600" height="220">
-      
-*(Before we try some commands, let's upload a text file to your course-specific account.)*
+  * Before we try some commands, let's upload a text file to your course-specific account.
 
   * Create an empty folder on your computer and name it something like: CSE15L2023
   * Now, open this folder using ctrl or command + o or by clicking on File -> Open menu option.
@@ -56,7 +55,7 @@
       
   * Give a name to it something like: helloworld.txt (make sure to append the name with '.txt' extension)
 
-      <img src="newfile.png" width="600" height="220">
+      <img src="helloworld.png" width="600" height="220">
       
   * Type in anything you want in this text file (make sure to hit enter at the end to create a new empty line for readability purposes in the Terminal later).
 
