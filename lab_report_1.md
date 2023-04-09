@@ -60,6 +60,7 @@
       <img src="typing.png" width="250" height="110">
       
   * Save everything by using ctrl or command + s or by clicking on File -> Save menu option.
+  * Open the Terminal window.
   * Copy and paste (or type) the following command in your Terminal window: scp helloworld.txt cs15lsp23zz@ieng6.ucsd.edu:~/
 
       <img src="scp.png" width="500" height="120">
