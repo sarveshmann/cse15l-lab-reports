@@ -43,7 +43,7 @@
 > ### Step 3 - Trying some commands
 *(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal to avoid the 'Permission Denied' error.)*
       
-*(Before we try some commands, let's upload a text file to your course-specific account.)*
+**Before we try some commands, let's upload a text file to your course-specific account:**
 
   * Create an empty folder on your computer and name it something like: CSE15L2023
   * Now, open this folder in VScode using ctrl or command + o or by clicking on File -> Open menu option.
@@ -70,7 +70,7 @@
 
 *(After uploading the file, kill the terminal again and reconnect remotely using the instructions in Step 2.)*
 
-**Let's try some useful commands now**
+**Let's try some useful commands now:**
 
   * To see your current working directory, type the command: pwd
   
