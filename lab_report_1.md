@@ -41,7 +41,7 @@
       <img src="connected.png" width="600" height="220">
       
 > ### Step 3 - Trying some commands
-*(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal to avoid the Permission Denied error.)*
+*(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal to avoid the 'Permission Denied' error.)*
       
 *(Before we try some commands, let's upload a text file to your course-specific account.)*
 
