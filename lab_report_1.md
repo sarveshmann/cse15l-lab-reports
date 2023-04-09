@@ -62,12 +62,12 @@
   * Save everything by using ctrl or command + s or by clicking on File -> Save menu option.
   * Open the Terminal window.
   * Copy and paste (or type) the following command in your Terminal window: scp helloworld.txt cs15lsp23zz@ieng6.ucsd.edu:~/
-
-      <img src="scp.png" width="500" height="120">
-
   * Replace "zz" in the command with the letters in your course-specific account and press Enter.
   * You will be prompted to enter your account password, type in your password and press Enter.
   * Congratulations! Now, you have successfully uploaded a text file to your course-specific account.
+
+       <img src="scp.png" width="500" height="120">
+
   * After uploading the file, kill the terminal again and reconnect remotely using the instructions in Step 2.
 
 *(Let's try some useful commands now)*
