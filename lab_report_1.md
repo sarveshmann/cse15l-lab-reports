@@ -68,9 +68,9 @@
 
        <img src="scp.png" width="500" height="120">
 
-  * After uploading the file, kill the terminal again and reconnect remotely using the instructions in Step 2.
+*(After uploading the file, kill the terminal again and reconnect remotely using the instructions in Step 2.)*
 
-*(Let's try some useful commands now)*
+**Let's try some useful commands now**
 
   * To see your current working directory, type the command: pwd
   
