@@ -11,6 +11,7 @@
 ## **Instructions:**
 
 > ### Step 1 -  Installing VScode:
+
   * Go to [VScode](https://code.visualstudio.com).
   * Select your operating system from the dropdown list.
   
@@ -23,6 +24,7 @@
   * Follow the steps on this [link](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994) to learn how to use Bash on VScode.
 
 > ### Step 2 - Remotely Connecting
+
   * Open the Terminal window on VScode, using ctrl or command + ` or by clicking on Terminal -> New Terminal menu option.
   
       <img src="terminal.png" width="400" height="200">
@@ -41,6 +43,7 @@
       <img src="connected.png" width="600" height="220">
       
 > ### Step 3 - Trying some commands
+
 *(Note: Prior to performing the following steps, if your terminal is open, kill the Terminal to avoid the 'Permission Denied' error.)*
       
 **Before we try some commands, let's upload a text file to your course-specific account:**
@@ -87,5 +90,3 @@
 
  
 > ## Congratulations! you have successfully completed all of the objectives.
-
-
