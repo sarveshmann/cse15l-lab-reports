@@ -31,7 +31,7 @@
   
       <img src="terminal.png" width="400" height="200">
       
-  * Copy and paste (or type) the following command on your Terminal window: ssh cs15lsp23zz@ieng6.ucsd.edu
+  * Copy and paste (or type) the following command on your Terminal window: `ssh cs15lsp23zz@ieng6.ucsd.edu`
  
       <img src="ssh.png" width="500" height="120">
       
@@ -67,7 +67,7 @@
       
   * Save everything by using ctrl or command + s or by clicking on File -> Save menu option.
   * Open the Terminal window.
-  * Copy and paste (or type) the following command in your Terminal window: scp helloworld.txt cs15lsp23zz@ieng6.ucsd.edu:~/
+  * Copy and paste (or type) the following command in your Terminal window: `scp helloworld.txt cs15lsp23zz@ieng6.ucsd.edu:~/`
   * Replace "zz" in the command with the letters in your course-specific account and press Enter.
   * You will be prompted to enter your account password, type in your password and press Enter.
   * Congratulations! Now, you have successfully uploaded a text file to your course-specific account.
@@ -78,15 +78,15 @@
 
 **Let's try some useful commands now:**
 
-  * To see your current working directory, type the command: pwd
+  * To see your current working directory, type the command: `pwd`
   
        <img src="pwd.png" width="500" height="280">
   
-  * To list the contents in this directory, type the command: ls
+  * To list the contents in this directory, type the command: `ls`
 
        <img src="ls.png" width="500" height="300">
 
-  * To print out the contents of a text file, type the command: cat helloworld.txt (Note: file name might be different for you)
+  * To print out the contents of a text file, type the command: `cat helloworld.txt` (Note: file name might be different for you)
  
        <img src="cat.png" width="500" height="320">
 
