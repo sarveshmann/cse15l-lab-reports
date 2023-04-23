@@ -56,7 +56,7 @@
 I am choosing an **'infinite loop' bug** I found in the "merge" method of the file named "ListExamples.java", the original code for which is as follows:
 <br />
 
-<pre>// Takes two sorted list of strings (so "a" appears before "b" and so on),<br />
+<pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),<br />
  // and return a new list that has all the strings in both list in sorted order.<br />
   static List<String> merge(List<String> list1, List<String> list2) {<br />
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();<br />
@@ -80,7 +80,8 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;<br />
   &nbsp;&nbsp;&nbsp;&nbsp;}<br />
   &nbsp;&nbsp;&nbsp;&nbsp;return result;<br />
-  }</pre>
+  } </pre>
+  
  <br />
  <br />
 > ### Step 2 -  Failure inducing input:
