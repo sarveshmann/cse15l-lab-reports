@@ -56,30 +56,30 @@
 I am choosing an **'infinite loop' bug** I found in the "merge" method of the file named "ListExamples.java", the original code for which is as follows:
 <br />
 
-<code>// Takes two sorted list of strings (so "a" appears before "b" and so on),
- // and return a new list that has all the strings in both list in sorted order.
-  static List<String> merge(List<String> list1, List<String> list2) {
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();
-  &nbsp;&nbsp;&nbsp;&nbsp;int index1 = 0, index2 = 0;
-  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size() && index2 < list2.size()) {
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2));
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index2 += 1;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-  &nbsp;&nbsp;&nbsp;&nbsp;}
-  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size()) {
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
-  &nbsp;&nbsp;&nbsp;&nbsp;}
-  &nbsp;&nbsp;&nbsp;&nbsp;while(index2 < list2.size()) {
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2));
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
-  &nbsp;&nbsp;&nbsp;&nbsp;}
-  &nbsp;&nbsp;&nbsp;&nbsp;return result;
+<code>// Takes two sorted list of strings (so "a" appears before "b" and so on),<br />
+ // and return a new list that has all the strings in both list in sorted order.<br />
+  static List<String> merge(List<String> list1, List<String> list2) {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;int index1 = 0, index2 = 0;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size() && index2 < list2.size()) {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(list1.get(index1).compareTo(list2.get(index2)) < 0) {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2));<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index2 += 1;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size()) {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index2 < list2.size()) {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2));<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;return result;<br />
   }</code>
  <br />
  <br />
@@ -87,13 +87,13 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   An example of a **failure inducing input** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
   <br />
   
-  <code>@Test
-  public void testMerge(){
-  &nbsp;&nbsp;&nbsp;&nbsp;// inputs
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList("b", "d", "f");
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "b", "c", "d", "e", "f");
-  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));     
+  <code>@Test<br />
+  public void testMerge(){<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;// inputs<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList("b", "d", "f");<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "b", "c", "d", "e", "f");<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));<br />    
   }</code>
   <br />
  <br />
@@ -101,13 +101,13 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   An example of an **input that doesn't cause failure** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
   <br />
   
-  <code>@Test
-  public void testMerge1(){
-  &nbsp;&nbsp;&nbsp;&nbsp;// inputs
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList();
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "c", "e");
-  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));     
+  <code>@Test<br />
+  public void testMerge1(){<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;// inputs<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList();<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "c", "e");<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));<br />     
   }</code>   
  <br />
  <br />
