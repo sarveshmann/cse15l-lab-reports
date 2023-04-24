@@ -8,6 +8,8 @@
 
 3. Reflect on what I learned.
 
+<br />
+
 ## **1: Write a web server**
 
 > ### Step 1 -  Code for the StringServer:
@@ -74,8 +76,8 @@ class StringServer {
 
 > ### Step 3 - Description of each output:
 
-<u>**For Output 1:**</u>
-
+### **For Output 1:**
+    
 **Important variables at start:**
 * Private static String variable `GREETING` which does not change and gets printed out at the top everytime.
 
@@ -106,10 +108,12 @@ class StringServer {
 
 <br />
 
-<u>**For Output 2:**</u>
+### **For Output 2:**</u>
 
 **Important variables at start:**
+
 <br />
+
 * Private static String variable `GREETING` which does not change and gets printed out at the top everytime.
 
 ```
@@ -319,17 +323,11 @@ static List<String> merge(List<String> list1, List<String> list2) {
 
 ## **3: Reflect on what I learned**
 
-  * To see your current working directory, type the command: `pwd`
-  
-       <img src="pwd.png" width="500" height="280">
-  
-  * To list the contents in this directory, type the command: `ls`
+<br />
 
-       <img src="ls.png" width="500" height="300">
+In the week 2 and 3's labs, I have learned a lot of new things that I never knew how to do before. During the week 2 lab, I learned how the servers work, how they they take querries, and provide outputs. I also learned how to make my own server and run it remotely, which can let my peers access the server as well. During the week 3 lab, I gained some debugging skills and knowledge about JUnit tests. I learned the importance of taking a systematic approach to fix bugs where you first, test the code with **failure inducing inputs** through JUnit tests, check the **symptoms**, which is described as the unexpected behavior of a code, by looking at the output of these tests, and, finally, finding the bug to fix. Overall, I am glad to learn a lot of new things that will help me a lot in my future both as a computer science student and a software developer.
 
-  * To print out the contents of a text file, type the command: `cat helloworld.txt` (Note: file name might be different for you)
- 
-       <img src="cat.png" width="500" height="320">
+<br />
+<br />
 
- 
-> ## Congratulations! you have successfully completed all of the objectives.
+## Thank you for your time!**
