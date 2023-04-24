@@ -23,7 +23,8 @@
 I am choosing an **'infinite loop' bug** I found in the "merge" method of the file named "ListExamples.java", the original code for which is as follows:
 <br />
 
-<pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),
+<pre> 
+// Takes two sorted list of strings (so "a" appears before "b" and so on),
  // and return a new list that has all the strings in both list in sorted order.
   static List<String> merge(List<String> list1, List<String> list2) {
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();
@@ -47,7 +48,8 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
   &nbsp;&nbsp;&nbsp;&nbsp;}
   &nbsp;&nbsp;&nbsp;&nbsp;return result;
-  } </pre>
+  }
+  </pre>
   
  <br />
  <br />
@@ -57,14 +59,17 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   An example of a **failure inducing input** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
   <br />
   
-  <pre> @Test
+  <pre> 
+  @Test
   public void testMerge(){
   &nbsp;&nbsp;&nbsp;&nbsp;// inputs
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList("b", "d", "f");
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "b", "c", "d", "e", "f");
   &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));   
-  } </pre>
+  } 
+  </pre>
+  
   <br />
  <br />
  
@@ -80,7 +85,9 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList();
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "c", "e");
   &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));    
-  } </pre>   
+  } 
+  </pre>   
+  
  <br />
  <br />
  
@@ -101,10 +108,12 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   * If we look at the second to last line of the test result, we can see that the **line number 42** of the **merge method** caused the heap space to run out.
   * Line number 42 is inside the last **while loop** of the **merge** method, which is as follows:
   
-  <pre> while(index2 < list2.size()) {
+  <pre> 
+  while(index2 < list2.size()) {
       result.add(list2.get(index2)); //line 42
       index1 += 1;
- } </pre>
+  } 
+ </pre>
 
   * Looking at the code above, we can quickly find the **bug** that since we are updating **index1** instead of **index2**, the while loop never ends.
   * Therefore, **changing the index1 to index2 in line number 43 should fix the bug**.
@@ -113,7 +122,8 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
 
   * **Code Before:**
 
-<pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),
+<pre> 
+// Takes two sorted list of strings (so "a" appears before "b" and so on),
  // and return a new list that has all the strings in both list in sorted order.
   static List<String> merge(List<String> list1, List<String> list2) {
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();
@@ -137,13 +147,15 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1; // line 43
   &nbsp;&nbsp;&nbsp;&nbsp;}
   &nbsp;&nbsp;&nbsp;&nbsp;return result;
-  } </pre>
+  } 
+  </pre>
   
  <br />
  
   * **Code After:**
 
-<pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),
+<pre> 
+// Takes two sorted list of strings (so "a" appears before "b" and so on),
  // and return a new list that has all the strings in both list in sorted order.
   static List<String> merge(List<String> list1, List<String> list2) {
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();
@@ -167,7 +179,8 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index2 += 1; // line 43
   &nbsp;&nbsp;&nbsp;&nbsp;}
   &nbsp;&nbsp;&nbsp;&nbsp;return result;
-  } </pre>
+  } 
+  </pre>
   
  <br />
   
