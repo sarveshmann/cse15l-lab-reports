@@ -123,13 +123,15 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   When we run the aforementioned tests, we get the following output:
   
 ![Output](Output-for-tests.png)
+
+> ### Step 5 -  Analyze the bug:
   
-  A few things to note from this output:
+  We can find and fix the bug by analyzing the output of the test results above:
   * Two tests were ran but one of them failed.
   * The **passing input** test passed, however, the **failure inducing input** test caused the Java heap space to run out.
   * The line number that caused this symptom can be found at the very end of the test result, which is line number 33.
   * Line number 33 in my code is the last line of the **failure inducing input** test, however this does not inform us much about the bug.
-  * If we look at the second to last line of the test result, we can see that the **line number 44** of the **merge method** caused this error.
+  * If we look at the second to last line of the test result, we can see that the **line number 42** of the **merge method** caused the heap space to run out.
   * Line number 42 is inside the last **while loop** of the **merge** method, which is as follows:
   
   <pre> while(index2 < list2.size()) {
@@ -207,6 +209,9 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
 > ### Step 6 -  Output of both tests after fixing the bug:
 
 ![Output](Output-for-fix.png)
+
+<br />
+
   
 ## **3: Reflect on what I learned**
 
