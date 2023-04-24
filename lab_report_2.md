@@ -117,16 +117,97 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
  <br />
  <br />
  
-> ### Step 4 -  Output of running both tests:
+> ### Step 4 -  Output of running both tests before fixing the bug:
 
 
   When we run the aforementioned tests, we get the following output:
- 
- 
-      <img src="Output-for-tests.png" width="300" height="110">
   
+![Output](Output-for-tests.png)
   
+  A few things to note from this output:
+  * Two tests were ran but one of them failed.
+  * The **passing input** test passed, however, the **failure inducing input** test caused the Java heap space to run out.
+  * The line number that caused this symptom can be found at the very end of the test result, which is line number 33.
+  * Line number 33 in my code is the last line of the **failure inducing input** test, however this does not inform us much about the bug.
+  * If we look at the second to last line of the test result, we can see that the **line number 44** of the **merge method** caused this error.
+  * Line number 42 is inside the last **while loop** of the **merge** method, which is as follows:
+  
+  <pre> while(index2 < list2.size()) {
+      result.add(list2.get(index2)); //line 42
+      index1 += 1;
+ } </pre>
 
+  * Looking at the code above, we can quickly find the **bug** that since we are updating **index1** instead of **index2**, the while loop never ends.
+  * Therefore, **changing the index1 to index2 in line number 43 should fix the bug**.
+  
+> ### Step 5 -  Fix the bug:
+
+  * **Before:**
+  <br />
+
+<pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),
+ // and return a new list that has all the strings in both list in sorted order.
+  static List<String> merge(List<String> list1, List<String> list2) {
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();
+  &nbsp;&nbsp;&nbsp;&nbsp;int index1 = 0, index2 = 0;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size() && index2 < list2.size()) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2));
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index2 += 1;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size()) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index2 < list2.size()) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2));
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1; // line 43
+  &nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;return result;
+  } </pre>
+  
+ <br />
+ 
+  * **After:**
+  <br />
+
+<pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),
+ // and return a new list that has all the strings in both list in sorted order.
+  static List<String> merge(List<String> list1, List<String> list2) {
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> result = new ArrayList<>();
+  &nbsp;&nbsp;&nbsp;&nbsp;int index1 = 0, index2 = 0;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size() && index2 < list2.size()) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2));
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index2 += 1;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index1 < list1.size()) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list1.get(index1));
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index1 += 1;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;while(index2 < list2.size()) {
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.add(list2.get(index2)); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index2 += 1; // line 43
+  &nbsp;&nbsp;&nbsp;&nbsp;}
+  &nbsp;&nbsp;&nbsp;&nbsp;return result;
+  } </pre>
+  
+ <br />
+  
+> ### Step 6 -  Output of both tests after fixing the bug:
+
+![Output](Output-for-fix.png)
+  
 ## **3: Reflect on what I learned**
 
   * To see your current working directory, type the command: `pwd`
