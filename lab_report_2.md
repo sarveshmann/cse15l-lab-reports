@@ -84,7 +84,9 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   
  <br />
  <br />
+ 
 > ### Step 2 -  Failure inducing input:
+
   An example of a **failure inducing input** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
   <br />
   
@@ -98,7 +100,9 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   } </pre>
   <br />
  <br />
+ 
 > ### Step 3 -  Passing input:
+
   An example of an **input that doesn't cause failure** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
   <br />
   
@@ -112,10 +116,15 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   } </pre>   
  <br />
  <br />
+ 
 > ### Step 4 -  Output of running both tests:
+
+
   When we run the aforementioned tests, we get the following output:
  
+ 
       <img src="Output-for-tests.png" width="300" height="110">
+  
   
 
 ## **3: Reflect on what I learned**
