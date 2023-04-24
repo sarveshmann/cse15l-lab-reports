@@ -12,8 +12,60 @@
 
 > ### Step 1 -  Code for the StringServer:
 
-> ### Step 2 - Implementing the "**add-message**" query:
-      
+```
+import java.io.IOException;
+import java.net.URI;
+
+class StringHandler implements URLHandler {
+    // Greeting
+    private static String GREETING = "Welcome to your String Server!"
+        + "\n\nTo add a message, use the add-message query." 
+        + "\n\nHere are all of your messages:\n\n%s";
+    
+    // String to store all the messages
+    String str = "";
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return String.format(GREETING, str); 
+        } else {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add-message")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    str += parameters[1] + "\n";
+                    return String.format(GREETING, str);
+                }
+            }
+            return "404 Not Found!";
+        }
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new StringHandler());
+    }
+}
+```
+
+> ### Step 2 - Two screenshots of using add-message:
+
+* **Output 1:**
+
+<img src="server-output-1.png"  width=50% height=50%>
+
+* **Output 2:**
+
+<img src="server-output-2.png"  width=50% height=50%>
+
 > ### Step 3 - Testing the "**add-message**" query:
       
 ## **2: Analyze a bug from Lab 3**
