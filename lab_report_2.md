@@ -74,7 +74,7 @@ class StringServer {
 
 > ### Step 3 - Description of each output:
 
-**For Output 1:**
+<u>**For Output 1:**</u>
 
 **Important variables at start:**
 * Private static String variable `GREETING` which does not change and gets printed out at the top everytime.
@@ -93,6 +93,7 @@ class StringServer {
     String str = "";
 ```
 <br />
+
 **Operations:**
 
 * `handleRequest` method takes in the url `http://localhost:2028/add-message?s=Hello`.
@@ -104,7 +105,8 @@ class StringServer {
 * Finally, a formatted String gets returned which includes the `GREETING` and `str`, which is the added message.
 
 <br />
-**For Output 2:**
+
+<u>**For Output 2:**</u>
 
 **Important variables at start:**
 <br />
@@ -124,6 +126,7 @@ class StringServer {
     String str = "Hello\n";
 ```
 <br />
+
 **Operations:**
 
 * `handleRequest` method takes in the url `http://localhost:2028/add-message?s=How%20are%20you`. (*Note: spaces automatically get replaced with `%20`.)
@@ -136,6 +139,7 @@ class StringServer {
 
 <br />
 <br />
+
 ## **2: Analyze a bug from Lab 3**
 
 > ### Step 1 -  Choose a bug from Lab 3:
