@@ -64,7 +64,7 @@ class StringServer {
 
 * **Output 1:**
 
-    <img src="server-output-1.png"  width=500 height=300>
+    <img src="server-output-1.png"  width=450 height=200>
 
 * **Output 2:**
 
