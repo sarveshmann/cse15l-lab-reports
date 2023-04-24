@@ -64,7 +64,7 @@ class StringServer {
 
 * **Output 1:**
 
-    <img src="server-output-1.png"  width=350 height=250>
+    <img src="server-output-1.png"  width=350 height=200>
 
 * **Output 2:**
 
@@ -140,14 +140,12 @@ class StringServer {
 * Finally, a formatted String gets returned which includes the `GREETING` and `str` (the added message).
 
 <br />
-<br />
 
 ## **2: Analyze a bug from Lab 3**
 
 > ### Step 1 -  Choose a bug from Lab 3:
 
 I am choosing an **'infinite loop' bug** I found in the "merge" method of the file named "ListExamples.java", the original code for which is as follows:
-<br />
 
 ``` 
 // Takes two sorted list of strings (so "a" appears before "b" and so on),
@@ -200,7 +198,6 @@ public void testMerge(){
 > ### Step 3 -  Passing input:
 
   An example of an **input that doesn't cause failure** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
-  <br />
   
 ``` 
 @Test
@@ -222,7 +219,6 @@ public void testMerge1(){
   
 ![Output](Output-for-tests.png)
 
-<br />
 
 > ### Step 5 -  Analyze the output to find the bug:
   
@@ -317,7 +313,6 @@ static List<String> merge(List<String> list1, List<String> list2) {
 ![Output](Output-for-fix.png)
 
 <br />
-<br />
 
 ## **3: Reflect on what I learned**
 
@@ -325,6 +320,5 @@ static List<String> merge(List<String> list1, List<String> list2) {
 
 In the week 2 and 3's labs, I have learned a lot of new things that I never knew how to do before. During the week 2 lab, I learned how the servers work, how they they take querries, and provide outputs. I also learned how to make my own server and run it remotely, which can let my peers access the server as well. During the week 3 lab, I gained some debugging skills and knowledge about JUnit tests. I learned the importance of taking a systematic approach to fix bugs where you first, test the code with **failure inducing inputs** through JUnit tests, check the **symptoms**, which is described as the unexpected behavior of a code, by looking at the output of these tests, and, finally, finding the bug to fix. Overall, I am glad to learn a lot of new things that will help me a lot in my future both as a computer science student and a software developer.
 
-<br />
 
 # *Thank you for your time!*
