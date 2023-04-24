@@ -133,7 +133,7 @@ class StringServer {
 
 **Operations:**
 
-* `handleRequest` method takes in the url `http://localhost:2028/add-message?s=How%20are%20you`. (*Note: spaces automatically get replaced with `%20`.)
+* `handleRequest` method takes in the url `http://localhost:2028/add-message?s=How%20are%20you`. (*Note: spaces automatically get replaced with `%20`.*)
 * Inside this method, first `if` statement checks if the path is equal to `/`, which is not, so the `else` branch gets executed.
 * Inside the `else` branch, another `if` statment checks if the path contains `/add-message`, which it does, so the `if` branch gets executed.
 * Inside the `if` branch, the query string gets split using `=` as the splitter, and gets stored in the String array called `parameters`.
@@ -329,4 +329,4 @@ In the week 2 and 3's labs, I have learned a lot of new things that I never knew
 
 <br />
 
-# *Thank you for your time!!*
+# *Thank you for your time!*
