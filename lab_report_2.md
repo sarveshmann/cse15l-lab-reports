@@ -328,6 +328,5 @@ static List<String> merge(List<String> list1, List<String> list2) {
 In the week 2 and 3's labs, I have learned a lot of new things that I never knew how to do before. During the week 2 lab, I learned how the servers work, how they they take querries, and provide outputs. I also learned how to make my own server and run it remotely, which can let my peers access the server as well. During the week 3 lab, I gained some debugging skills and knowledge about JUnit tests. I learned the importance of taking a systematic approach to fix bugs where you first, test the code with **failure inducing inputs** through JUnit tests, check the **symptoms**, which is described as the unexpected behavior of a code, by looking at the output of these tests, and, finally, finding the bug to fix. Overall, I am glad to learn a lot of new things that will help me a lot in my future both as a computer science student and a software developer.
 
 <br />
-<br />
 
 # Thank you for your time!!
