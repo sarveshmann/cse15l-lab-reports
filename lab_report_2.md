@@ -56,18 +56,86 @@ class StringServer {
 }
 ```
 
+<br />
+
 > ### Step 2 - Two screenshots of using add-message:
 
 * **Output 1:**
 
 <img src="server-output-1.png"  width=50% height=50%>
 
+
 * **Output 2:**
 
 <img src="server-output-2.png"  width=50% height=50%>
 
-> ### Step 3 - Testing the "**add-message**" query:
-      
+
+<br />
+
+> ### Step 3 - Description of each output:
+
+**For Output 1:**
+
+**Important variables at start:**
+* Private static String variable `GREETING` which does not change and gets printed out at the top everytime.
+
+```
+// Greeting
+    private static String GREETING = "Welcome to your String Server!"
+        + "\n\nTo add a message, use the add-message query." 
+        + "\n\nHere are all of your messages:\n\n%s";
+```
+
+* String variable `str` used to store messsages.
+
+```
+// String to store all the messages
+    String str = "";
+```
+<br />
+**Operations:**
+
+* `handleRequest` method takes in the url `http://localhost:2028/add-message?s=Hello`.
+* Inside this method, first `if` statement checks if the path is equal to `/`, which is not, so the `else` branch gets executed.
+* Inside the `else` branch, another `if` statment checks if the path contains `/add-message`, which it does, so the `if` branch gets executed.
+* Inside the `if` branch, the query string gets split using `=` as the splitter, and gets stored in the String array called `parameters`.
+* Then, another `if` statement checks if the first element inside the `parameters` array is equal to `"s"`, which is true, so the `if` branch gets executed.
+* Inside the `if` branch, the second element of `parameters` array, which is `Hello`, and a new line `"\n"` get concatenated to `str`.
+* Finally, a formatted String gets returned which includes the `GREETING` and `str`, which is the added message.
+
+<br />
+**For Output 2:**
+
+**Important variables at start:**
+<br />
+* Private static String variable `GREETING` which does not change and gets printed out at the top everytime.
+
+```
+// Greeting
+    private static String GREETING = "Welcome to your String Server!"
+        + "\n\nTo add a message, use the add-message query." 
+        + "\n\nHere are all of your messages:\n\n%s";
+```
+
+* String variable `str` used to store messsages.
+
+```
+// String to store all the messages
+    String str = "Hello\n";
+```
+<br />
+**Operations:**
+
+* `handleRequest` method takes in the url `http://localhost:2028/add-message?s=How%20are%20you`. (*Note: spaces automatically get replaced with `%20`.)
+* Inside this method, first `if` statement checks if the path is equal to `/`, which is not, so the `else` branch gets executed.
+* Inside the `else` branch, another `if` statment checks if the path contains `/add-message`, which it does, so the `if` branch gets executed.
+* Inside the `if` branch, the query string gets split using `=` as the splitter, and gets stored in the String array called `parameters`.
+* Then, another `if` statement checks if the first element inside the `parameters` array is equal to `"s"`, which is true, so the `if` branch gets executed.
+* Inside the `if` branch, the second element of `parameters` array, which is `How are you`, and a new line `"\n"` get concatenated to `str`.
+* Finally, a formatted String gets returned which includes the `GREETING` and `str` (the added message).
+
+<br />
+<br />
 ## **2: Analyze a bug from Lab 3**
 
 > ### Step 1 -  Choose a bug from Lab 3:
@@ -104,7 +172,6 @@ static List<String> merge(List<String> list1, List<String> list2) {
  ```
   
  <br />
- <br />
  
 > ### Step 2 -  Failure inducing input:
 
@@ -122,7 +189,6 @@ public void testMerge(){
 } 
 ```
   
-  <br />
  <br />
  
 > ### Step 3 -  Passing input:
@@ -142,7 +208,6 @@ public void testMerge1(){
 ```   
   
  <br />
- <br />
  
 > ### Step 4 -  Output of running both tests before fixing the bug:
 
@@ -150,6 +215,8 @@ public void testMerge1(){
   When we run the aforementioned tests, we get the following output:
   
 ![Output](Output-for-tests.png)
+
+<br />
 
 > ### Step 5 -  Analyze the output to find the bug:
   
@@ -171,6 +238,8 @@ while(index2 < list2.size()) {
   * Looking at the code above, we can quickly find the **bug** that since we are updating **index1** instead of **index2**, the while loop never ends.
   * Therefore, **changing the index1 to index2 in line number 43 should fix the bug**.
   
+<br />
+
 > ### Step 5 -  Fix the bug:
 
   * **Code Before:**
@@ -202,7 +271,7 @@ static List<String> merge(List<String> list1, List<String> list2) {
       return result;
 } 
  ```
-  
+ 
  <br />
  
   * **Code After:**
@@ -242,8 +311,8 @@ static List<String> merge(List<String> list1, List<String> list2) {
 ![Output](Output-for-fix.png)
 
 <br />
+<br />
 
-  
 ## **3: Reflect on what I learned**
 
   * To see your current working directory, type the command: `pwd`
