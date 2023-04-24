@@ -104,7 +104,7 @@ class StringServer {
 
 <br />
 
-### **For Output 2:**</u>
+### **For Output 2:**
 
 **Important variables at start:**
 
