@@ -64,12 +64,14 @@ class StringServer {
 
 * **Output 1:**
 
-<img src="https://github.com/sarveshmann/cse15l-lab-reports/blob/c66b34f12af2760aafc09fa5f843d1b98d7ff031/server-output-1.png" width=50% height=50%>
+
+<img src="server-output-1.png" width=50% height=50%>
 
 
 * **Output 2:**
 
-<img src="https://github.com/sarveshmann/cse15l-lab-reports/blob/c66b34f12af2760aafc09fa5f843d1b98d7ff031/server-output-2.png" width=50% height=50%>
+
+<img src="server-output-2.png" width=50% height=50%>
 
 
 <br />
