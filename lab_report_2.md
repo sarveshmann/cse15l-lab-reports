@@ -64,11 +64,11 @@ class StringServer {
 
 * **Output 1:**
 
-    <img src="server-output-1.png"  width=100 height=40>
+    <img src="server-output-1.png"  width=500 height=200>
 
 * **Output 2:**
 
-    <img src="server-output-2.png"  width=100 height=40>
+    <img src="server-output-2.png"  width=500 height=200>
 
 <br />
 
