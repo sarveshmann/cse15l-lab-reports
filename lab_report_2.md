@@ -88,35 +88,28 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   An example of a **failure inducing input** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
   <br />
   
-  <code>@Test
-  <br />
+  <pre> @Test
   public void testMerge(){
-  <br />
   &nbsp;&nbsp;&nbsp;&nbsp;// inputs
-  <br />
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");
-  <br />
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList("b", "d", "f");
-   <br />
   &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "b", "c", "d", "e", "f");
-   <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));
-   <br />    
-  }</code>
+  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));   
+  } </pre>
   <br />
  <br />
 > ### Step 3 -  Passing input:
   An example of an **input that doesn't cause failure** (as a JUnit test) where we try to merge two sorted ArrayLists is as follows:
   <br />
   
-  <code>@Test<br />
-  public void testMerge1(){<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;// inputs<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList();<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "c", "e");<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));<br />     
-  }</code>   
+  <pre> @Test
+  public void testMerge1(){
+  &nbsp;&nbsp;&nbsp;&nbsp;// inputs
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input1 = Arrays.asList("a", "c", "e");
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> input2 = Arrays.asList();
+  &nbsp;&nbsp;&nbsp;&nbsp;List<String> expected1 = Arrays.asList("a", "c", "e");
+  &nbsp;&nbsp;&nbsp;&nbsp;assertEquals(null, expected1, ListExamples.merge(input1, input2));    
+  } </pre>   
  <br />
  <br />
 > ### Step 4 -  Output of running both tests:
