@@ -144,8 +144,7 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   
 > ### Step 5 -  Fix the bug:
 
-  * **Before:**
-  <br />
+  * **Code Before:**
 
 <pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),
  // and return a new list that has all the strings in both list in sorted order.
@@ -175,8 +174,7 @@ I am choosing an **'infinite loop' bug** I found in the "merge" method of the fi
   
  <br />
  
-  * **After:**
-  <br />
+  * **Code After:**
 
 <pre> // Takes two sorted list of strings (so "a" appears before "b" and so on),
  // and return a new list that has all the strings in both list in sorted order.
