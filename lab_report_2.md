@@ -99,9 +99,9 @@ public void testMerge1(){
   
 ![Output](Output-for-tests.png)
 
-> ### Step 5 -  Analyze the bug:
+> ### Step 5 -  Analyze the output to find the bug:
   
-  We can find and fix the bug by analyzing the output of the test results above:
+  We can find the bug by analyzing the output of the test results above:
   * Two tests were ran but one of them failed.
   * The **passing input** test passed, however, the **failure inducing input** test caused the Java heap space to run out.
   * The line number that caused this symptom can be found at the very end of the test result, which is line number 33.
