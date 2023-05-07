@@ -4,6 +4,6 @@
 ## CSE 15L Lab Reports
 
 
-* [Lab 1 report](https://sarveshmann.github.io/cse15l-lab-reports/lab_report_1)
-* [Lab 2 report](https://sarveshmann.github.io/cse15l-lab-reports/lab_report_2)
+* [Lab Report 1](https://sarveshmann.github.io/cse15l-lab-reports/lab_report_1)
+* [Lab Report 2](https://sarveshmann.github.io/cse15l-lab-reports/lab_report_2)
 
