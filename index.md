@@ -5,4 +5,7 @@
 
 ## CSE 15L Lab Reports
 
-*To search for a specific lab number, add `/lab_report_#` to the URL.*
+
+* [Lab 1 report](https://sarveshmann.github.io/cse15l-lab-reports/lab_report_1)
+* [Lab 2 report](https://sarveshmann.github.io/cse15l-lab-reports/lab_report_2)
+
