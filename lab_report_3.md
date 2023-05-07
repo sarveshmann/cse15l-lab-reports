@@ -81,7 +81,7 @@ of harm from withholding established treatment [2].
 > Example #2
 
 ```
-[cs15lsp23ij@ieng6-202]:plos:193$ grep -n "PLoS" pmed.0020157.txt
+[sarveshmann]:plos:193$ grep -n "PLoS" pmed.0020157.txt
 16:        PLoS Medicine Debate is the value of placebo controls in early “proof of
 ```
 
@@ -90,14 +90,14 @@ of harm from withholding established treatment [2].
 > Example #1
 
 ```
-[cs15lsp23ij@ieng6-202]:plos:194$ grep -c "treatment" pmed.0020157.txt
+[sarveshmann]:plos:194$ grep -c "treatment" pmed.0020157.txt
 5
 ```
 
 > Example #2
 
 ```
-[cs15lsp23ij@ieng6-202]:plos:196$ grep -c "VIGOR" pmed.0020157.txt
+[sarveshmann]:plos:196$ grep -c "VIGOR" pmed.0020157.txt
 1
 ```
 
@@ -106,7 +106,7 @@ of harm from withholding established treatment [2].
 > Example #1
 
 ```
-[cs15lsp23ij@ieng6-202]:plos:198$ grep -w "as" pmed.0020157.txt  
+[sarveshmann]:plos:198$ grep -w "as" pmed.0020157.txt  
         seeking a rigorous efficacy signal before moving on to larger-scale trials (and exposing as
         few subjects as possible to drugs that might not work or turn out to be toxic) is a valid
 ```
@@ -114,7 +114,7 @@ of harm from withholding established treatment [2].
 > Example #2
 
 ```
-[cs15lsp23ij@ieng6-202]:plos:199$ grep -w "to" pmed.0020157.txt
+[sarveshmann]:plos:199$ grep -w "to" pmed.0020157.txt
         treatment to prevent adenomatous polyps, few commentators would have any objections to the
         use of placebo controls in this study. Nevertheless, they are right to suggest that it
         would have been desirable to have included a placebo control in the VIGOR study to provide
