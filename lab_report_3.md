@@ -48,6 +48,8 @@ ethical reason for using placebo controls, provided subjects are not exposed to 
 of harm from withholding established treatment [2].
 ```
 
+***
+
 **Two examples for command-line option, `-i`:**
 
 > Example #1
@@ -69,6 +71,8 @@ of harm from withholding established treatment [2].
         ethical reason for using placebo controls, provided subjects are not exposed to undue risks
 ```
 
+***
+
 **Two examples for command-line option, `-n`:**
 
 > Example #1
@@ -85,6 +89,8 @@ of harm from withholding established treatment [2].
 16:        PLoS Medicine Debate is the value of placebo controls in early “proof of
 ```
 
+***
+
 **Two examples for command-line option, `-c`:**
 
 > Example #1
@@ -100,6 +106,8 @@ of harm from withholding established treatment [2].
 [sarveshmann]:plos:196$ grep -c "VIGOR" pmed.0020157.txt
 1
 ```
+
+***
 
 **Two examples for command-line option, `-w`:**
 
@@ -122,6 +130,8 @@ of harm from withholding established treatment [2].
         few subjects as possible to drugs that might not work or turn out to be toxic) is a valid
         ethical reason for using placebo controls, provided subjects are not exposed to undue risks
 ```
+
+***
 
 ## **3: Cite the sources**
 
