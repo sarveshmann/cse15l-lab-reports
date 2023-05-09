@@ -59,7 +59,7 @@ of harm from withholding established treatment [2].
         citing the APPROVe trial in support of their position. Because there is no established
 ```
 
-**Explanation:** Here the command `grep -i` searches for the given pattern *"appro"* in the text file and prints out the lines that contain it. Notice, the case of the letters doesn't matter here, as the command found the pattern even though the it is in uppercase letters in the actual text.  
+**Explanation:** Here the command `grep -i` searches for the given pattern *"appro"* in the text file and prints out the lines that contain it. Notice, the case of the letters doesn't matter here, as the command found the pattern even though it is in uppercase letters in the actual text.  
 
 > Example #2
 
