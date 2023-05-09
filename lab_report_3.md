@@ -59,7 +59,7 @@ of harm from withholding established treatment [2].
         citing the APPROVe trial in support of their position. Because there is no established
 ```
 
-**Explanation:** Here the command `grep -i` searches for the pattern that matches the given pattern *"appro"* in the text file and prints out the lines that contains it. Notice, the case of the letters do not matter here, as the command found it even tho, in the text, the pattern is in uppercase letters.  
+**Explanation:** Here the command `grep -i` searches for the given pattern *"appro"* in the text file and prints out the lines that contain it. Notice, the case of the letters do not matter here, as the command found the pattern even though the it is in uppercase letters in the actual text.  
 
 > Example #2
 
@@ -73,7 +73,7 @@ of harm from withholding established treatment [2].
         ethical reason for using placebo controls, provided subjects are not exposed to undue risks
 ```
 
-**Explanation:** Here the command `grep -i` searches for the pattern that matches the given pattern *"pl"* in the text file and prints out the lines that contains it. Notice, the rest of the pattern doesn't matter here as any word that contains "pl" in it will also be printed.
+**Explanation:** Here the command `grep -i` searches for the given pattern *"pl"* in the text file and prints out the lines that contain it. Notice, the rest of the pattern doesn't matter here as any word that contains "pl" in it, will also be printed.
 
 ***
 
@@ -86,7 +86,7 @@ of harm from withholding established treatment [2].
 6:        Turner and Tramèr provide a cogent argument in favor of the ethical use of placebo
 ```
 
-**Explanation:** Here the command `grep -n` searches for the lines that that contain the given pattern "Turner" and prints them out along with their number. In this case, the line number is 6 (printed on the very left).
+**Explanation:** Here the command `grep -n` searches for the lines that contain the given pattern *"Turner"* and prints them out along with their line number. In this case, the line number is 6.
 
 > Example #2
 
@@ -95,7 +95,7 @@ of harm from withholding established treatment [2].
 16:        PLoS Medicine Debate is the value of placebo controls in early “proof of
 ```
 
-**Explanation:** Here the command `grep -n` searches for the lines that that contain the given pattern "PLoS" and prints them out along with their number. In this case, the line number is 16 (printed on the very left).
+**Explanation:** Here the command `grep -n` searches for the lines that contain the given pattern *"PLoS"* and prints them out along with their line number. In this case, the line number is 16.
 
 ***
 
@@ -108,7 +108,7 @@ of harm from withholding established treatment [2].
 5
 ```
 
-**Explanation:** Here the command `grep -c` searches for the lines that that contain the given pattern "treatment" and prints out the count of all line that contains it. In this case, the count is 5 (printed on the very left).
+**Explanation:** Here the command `grep -c` searches for the lines that contain the given pattern *"treatment"* and prints out the count of all lines that contain it. In this case, the count is 5.
 
 > Example #2
 
@@ -117,7 +117,7 @@ of harm from withholding established treatment [2].
 1
 ```
 
-**Explanation:** Here the command `grep -c` searches for the lines that that contain the given pattern "VIGOR" and prints out the count of all line that contains it. In this case, the count is 1 (printed on the very left).
+**Explanation:** Here the command `grep -c` searches for the lines that contain the given pattern *"VIGOR"* and prints out the count of all lines that contain it. In this case, the count is 1.
 
 ***
 
@@ -131,7 +131,7 @@ of harm from withholding established treatment [2].
         few subjects as possible to drugs that might not work or turn out to be toxic) is a valid
 ```
 
-**Explanation:** Here the command `grep -w` searches for the lines that that contain the given pattern "as" precisely and prints out the lines that contains it. Notice, only those lines are printed that contains the word "as" exactly, and not the other ones that maybe have "as" in the spelling of a word.
+**Explanation:** Here the command `grep -w` searches for the lines that contain the given pattern *"as"* precisely and prints out the lines that contain it. Notice, only those lines are printed that contain the word "as" exactly, and not the other ones that may have *"as"* in the spelling of a word.
 
 > Example #2
 
@@ -145,7 +145,7 @@ of harm from withholding established treatment [2].
         ethical reason for using placebo controls, provided subjects are not exposed to undue risks
 ```
 
-**Explanation:** Here the command `grep -w` searches for the lines that that contain the given pattern "to" precisely and prints out the lines that contains it. Notice, only those lines are printed that contains the word "as" exactly, and not the other ones that maybe have "to" in the spelling of a word.
+**Explanation:** Here the command `grep -w` searches for the lines that contain the given pattern *"to"* precisely and prints out the lines that contain it. Notice, only those lines are printed that contain the word "as" exactly, and not the other ones that may have *"to"* in the spelling of a word.
 
 ***
 
