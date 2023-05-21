@@ -66,7 +66,7 @@
 
   * Enter the editor mode to edit the ListExamples.java file.
   
-      <img src="vim.png" width="350" height="20">
+      <img src="vim.png" width="400" height="25">
       
       *Keys pressed: `<vim ><ListExamples.java><enter>` (Note: I have space after "vim")*
       <br>
@@ -90,7 +90,7 @@
       
       *Keys pressed: `<:wq><enter>`*
       <br>
-      *I used the `w` command to save the changes along with `q` command to quit the editor mode.*
+      *I pressed `:` to enter command-line mode and used the `w` command to save the changes along with `q` command to quit the editor mode.*
  
    * Compile and Run the tests java file.
  
