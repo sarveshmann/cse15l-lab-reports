@@ -121,13 +121,12 @@
       <img src="git-add.png" width="350" height="20">
       
       *Keys pressed: `<git add *><enter>`*
-      
       <br>
       *I used the `git add` command with a `*` next to it to track all the files in Lab 7.*
       
   * Commit the changes.
   
-      <img src="git-commit.png" width="400" height="200">
+      <img src="git-commit.png" width="600" height="250">
       
       *Keys pressed: `<git commit -m "Fixed a bug in merge method of ListExamples.java"><enter>` (Note: Inside the quotes, the message can be anything)*
       <br>
@@ -135,7 +134,7 @@
       
   * Push to the repository.
  
-      <img src="git-push.png" width="500" height="120">
+      <img src="git-push.png" width="600" height="170">
       
       *Keys pressed: `<git push origin main><enter>`*
       <br>
