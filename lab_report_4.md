@@ -4,7 +4,7 @@
 
 1. Remotely access the repository.
 
-2. Edit some files in the repository.
+2. Edit files in the repository.
 
 3. Commit the changes and push to the repository.
 
@@ -49,7 +49,7 @@
       
       *Here, we can see two Junit tests were ran and one of them failed. Now, in the next step, we will edit the ListExamples.java file to fix the error in the "merge" method using just the command-line*
 
-> ### Step 2 - Edit some files in the repository:
+> ### Step 2 - Edit files in the repository:
 
   * Enter the editor mode to edit the ListExamples.java file.
   
@@ -62,12 +62,15 @@
   
       <img src="terminal.png" width="400" height="200">
       
-      *Keys pressed: `<G><6k><enter><e><r2><enter>` (Note: It's a upper-case 'G')*
+      *Keys pressed: `<G><6k><enter><e><r2>` (Note: It's a upper-case 'G')*
       *I used the `G` command to go to the end of the file. Then, I used `k` command to go up six times by putting 6 in front of it. After that, I pressed `e` command to go to last character, which is '1', of the first word, which is 'index1' and used the `r` command with 2 after it to replace '1' with '2'.
       
-  * Copy and paste (or type) the following command on your Terminal window: `ssh cs15lsp23zz@ieng6.ucsd.edu`
+  * Saving the edited file.
  
       <img src="ssh.png" width="500" height="120">
+      
+      *Keys pressed: `<:wq><enter>`*
+      *I used the `w` command to save the changes along with `q` command to quit the editor mode.
       
   * Replace "zz" in the command with the letters in your course-specific account and press Enter.
   * You will be prompted to enter your account password, type in your password and press Enter.
