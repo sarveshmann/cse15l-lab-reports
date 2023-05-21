@@ -14,7 +14,9 @@
 
   * Log into ieng6.
   
-      <img src="vscod.png" width="200" height="180">
+      <img src="ssh-search.png" width="200" height="180">
+      
+      <img src="ssh.png" width="200" height="180">
       
       *Keys pressed: `<ctrl+r><ssh><enter>`*
       *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `ssh` and pressed `enter` to access `ssh cs15lsp23ij@ieng6.ucsd.edu` in my history.*
