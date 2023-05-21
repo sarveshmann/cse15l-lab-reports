@@ -138,7 +138,9 @@
       
       *Keys pressed: `<git push origin main><enter>`*
       <br>
-      *I used the `git push` command to push the changes to my Github account. Now, all the changes should be reflected on Github.*
+      *I used the `git push` command to push the changes to my Github account. Now, all the changes should be reflected on Github which can be seen in the screenshot below.*
+      
+      <img src="githubpage.png" width="750" height="350">
 
  
 > ## Congratulations! you have successfully completed all of the objectives.
