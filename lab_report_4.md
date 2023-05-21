@@ -110,7 +110,7 @@
       <br>
       *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `java ` and pressed `enter` to access `java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests` in my history.*
       
-      <img src="tests-passed.png" width="650" height="180">
+      <img src="tests-passed.png" width="650" height="120">
       
       *Here, we can see two Junit tests were ran and both of them passed. So, we fixed the bug. Now, in the next step, we will commit the changes and push to the repository using the command-line only.*
       
@@ -120,7 +120,7 @@
   
       <img src="git-add.png" width="350" height="20">
       
-      *Keys pressed: `<git add *><enter>*
+      *Keys pressed: `<git add *><enter>`*
       
       <br>
       *I used the `git add` command with a `*` next to it to track all the files in Lab 7.*
