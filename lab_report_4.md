@@ -134,7 +134,7 @@
       
   * Push to the repository.
  
-      <img src="git-push.png" width="600" height="170">
+      <img src="git-push.png" width="620" height="170">
       
       *Keys pressed: `<git push origin main><enter>`*
       <br>
