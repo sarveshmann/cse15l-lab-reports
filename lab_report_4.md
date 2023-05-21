@@ -82,7 +82,7 @@
       
       *Keys pressed: `<G><6k><enter><e><r2>` (Note: It's a upper-case 'G')*
       <br>
-      *I used the `G` command to go to the end of the file. Then, I used `k` command to go up six times by putting 6 in front of it. After that, I pressed `e` command to go to last character, which is '1', of the first word, which is 'index1' and used the `r` command with 2 after it to replace '1' with '2'.*
+      *I used the `G` command to go to the end of the file. Then, I used `k` command to go up six times by putting 6 in front of it. After that, I pressed `e` command to go to last character, which is '1', of the first word, which is 'index1', and used the `r` command with 2 after it to replace '1' with '2'.*
       
   * Saving the edited file.
  
