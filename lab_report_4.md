@@ -34,7 +34,7 @@
       
   * Looking at the contents of cloned files.
  
-      <img src="cd-ls.png" width="200" height="180">
+      <img src="cd-ls.png" width="400" height="50">
       
       *Keys pressed: `<cd lab7><enter><ls><enter>`*
       <br>
@@ -42,27 +42,23 @@
       
   * Compile and Run the tests java file.
  
-      <img src="javac-search.png" width="200" height="180">
+      <img src="javac-search.png" width="600" height="20">
       
       <br>
       
-      <img src="javac.png" width="200" height="180">
+      <img src="javac.png" width="600" height="30">
       
       *Keys pressed: `<ctrl+r><javac><enter>`*
       <br>
       *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `javac` and pressed `enter` to access `javac -cp ".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar" *.java` in my history.*
       
-      <img src="java-search.png" width="200" height="180">
-      
-      <br>
-      
-      <img src="java.png" width="200" height="180">
+      <img src="java-search.png" width="750" height="35">
       
       *Keys pressed: `<ctrl+r><java ><enter>` (Note: I have space after "java")* 
       <br>
       *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `java ` and pressed `enter` to access `java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests` in my history.*
       
-      <img src="tests-failes.png" width="200" height="180">
+      <img src="tests-fail.png" width="650" height="180">
      
       *Here, we can see two Junit tests were ran and one of them failed. Now, in the next step, we will edit the ListExamples.java file to fix the error in the "merge" method using just the command-line*
 
@@ -70,19 +66,19 @@
 
   * Enter the editor mode to edit the ListExamples.java file.
   
-      <img src="vim.png" width="200" height="180">
+      <img src="vim.png" width="350" height="20">
       
       *Keys pressed: `<vim ><ListExamples.java><enter>` (Note: I have space after "vim")*
       <br>
       *I used the `vim` command to edit the "ListExamples.java" file.*
       
-      <img src="vim-editor.png" width="200" height="180">
+      <img src="vim-editor.png" width="700" height="500">
       
       *Here, we can see the vim-editor view of the file.*
       
   * Go to the bug and fix it.
   
-      <img src="index2.png" width="400" height="200">
+      <img src="index2.png" width="700" height="500">
       
       *Keys pressed: `<G><6k><enter><e><r2>` (Note: It's a upper-case 'G')*
       <br>
@@ -90,7 +86,7 @@
       
   * Saving the edited file.
  
-      <img src="save-quit.png" width="500" height="120">
+      <img src="save-quit.png" width="700" height="500">
       
       *Keys pressed: `<:wq><enter>`*
       <br>
@@ -98,27 +94,23 @@
  
    * Compile and Run the tests java file.
  
-      <img src="javac-search.png" width="200" height="180">
+      <img src="javac-search.png" width="600" height="20">
             
       <br>
       
-      <img src="javac.png" width="200" height="180">
+      <img src="javac.png" width="600" height="30">
       
       *Keys pressed: `<ctrl+r><javac><enter>`*
       <br>
       *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `javac` and pressed `enter` to access `javac -cp ".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar" *.java` in my history.*
       
-      <img src="java-search.png" width="200" height="180">
-            
-      <br>
-      
-      <img src="java.png" width="200" height="180">
+      <img src="java-search.png" width="750" height="35">
       
       *Keys pressed: `<ctrl+r><java ><enter>` (Note: I have space after "java")*
       <br>
       *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `java ` and pressed `enter` to access `java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests` in my history.*
       
-      <img src="tests-passed.png" width="200" height="180">
+      <img src="tests-passed.png" width="650" height="180">
       
       *Here, we can see two Junit tests were ran and both of them passed. So, we fixed the bug. Now, in the next step, we will commit the changes and push to the repository using the command-line only.*
       
@@ -126,7 +118,7 @@
 
   * Using `git add` to track the files.
   
-      <img src="git-add.png" width="200" height="180">
+      <img src="git-add.png" width="350" height="20">
       
       *Keys pressed: `<git add *><enter>*
       
