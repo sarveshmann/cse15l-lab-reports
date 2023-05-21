@@ -12,9 +12,11 @@
 
 > ### Step 1 -  Remotely access the repository:
 
-  * Select your operating system from the dropdown list.
+  * Log into ieng6.
   
       <img src="vscod.png" width="200" height="180">
+      
+      
   
   * Follow the instructions to download and install VScode.
    
