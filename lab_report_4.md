@@ -86,7 +86,7 @@
       
   * Saving the edited file.
  
-      <img src="save-quit.png" width="700" height="500">
+      <img src="saved.png" width="700" height="500">
       
       *Keys pressed: `<:wq><enter>`*
       <br>
