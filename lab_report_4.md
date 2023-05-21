@@ -46,19 +46,24 @@
       *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `java ` and pressed `enter` to access `java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests` in my history.
       
       <img src="vscod.png" width="200" height="180">
-      *Here, we can see two Junit tests were ran and one of them failed. Now, in the next step, we will edit the ListExamples.java file to fix the error using just the command-line*
-  
-   
-*(If you are not using Windows operating system, skip to Step 2.)*
-  * Download and install [Git for Windows](https://gitforwindows.org).
-  * Follow the steps on this [link](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994) to learn how to use Bash on VScode.
+      
+      *Here, we can see two Junit tests were ran and one of them failed. Now, in the next step, we will edit the ListExamples.java file to fix the error in the "merge" method using just the command-line*
 
 > ### Step 2 - Edit some files in the repository:
 
-
-  * Open the Terminal window on VScode, using ctrl or command + ` or by clicking on Terminal -> New Terminal menu option.
+  * Enter the editor mode to edit the ListExamples.java file.
+  
+      <img src="vscod.png" width="200" height="180">
+      
+      *Keys pressed: `<vim ><ListExamples.java><enter>` (Note: I have space after "vim")*
+      *I used the `vim` command to edit the "ListExamples.java" file.
+      
+  * Go to the bug and fix it.
   
       <img src="terminal.png" width="400" height="200">
+      
+      *Keys pressed: `<G><6k><enter><e><r2><enter>` (Note: It's a upper-case 'G')*
+      *I used the `G` command to go to the end of the file. Then, I used `k` command to go up six times by putting 6 in front of it. After that, I pressed `e` command to go to last character, which is '1', of the first word, which is 'index1' and used the `r` command with 2 after it to replace '1' with '2'.
       
   * Copy and paste (or type) the following command on your Terminal window: `ssh cs15lsp23zz@ieng6.ucsd.edu`
  
