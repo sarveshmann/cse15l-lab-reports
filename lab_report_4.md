@@ -17,9 +17,37 @@
       <img src="vscod.png" width="200" height="180">
       
       *Keys pressed: `<ctrl+r><ssh><enter>`*
+      *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `ssh` and pressed `enter` to access `ssh cs15lsp23ij@ieng6.ucsd.edu` in my history.
       
+  * Cloning the repository to the remote account.
+ 
+      <img src="vscod.png" width="200" height="180">
+      
+      *Keys pressed: `<git clone git@github.com:sarveshmann/lab7.git><enter>`*
+      *I used the `git clone` command and pressed `enter` to clone the Lab 7 repository on my github account to the remote account.
+      
+  * Looking at the contents of cloned files.
+ 
+      <img src="vscod.png" width="200" height="180">
+      
+      *Keys pressed: `<cd lab7><enter><ls><enter>`*
+      *I used the `cd` command to change current directory to Lab 7 and the `ls` command to list the contents of Lab 7 directory.
+      
+  * Compile and Run the tests java file.
+ 
+      <img src="vscod.png" width="200" height="180">
+      
+      *Keys pressed: `<ctrl+r><javac><enter>`*
+      *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `javac` and pressed `enter` to access `javac -cp ".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar" *.java` in my history.
+      
+      <img src="vscod.png" width="200" height="180">
+      
+      *Keys pressed: `<ctrl+r><java ><enter>` (Note: I have space after "java")*  
+      *I used the `ctrl+r` command to enter the "reverse search history" mode. Then, typed `java ` and pressed `enter` to access `java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests` in my history.
+      
+      <img src="vscod.png" width="200" height="180">
+      *Here, we can see two Junit tests were ran and one of them failed. Now, in the next step, we will edit the ListExamples.java file to fix the error using just the command-line*
   
-  * Follow the instructions to download and install VScode.
    
 *(If you are not using Windows operating system, skip to Step 2.)*
   * Download and install [Git for Windows](https://gitforwindows.org).
