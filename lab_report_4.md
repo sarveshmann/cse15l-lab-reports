@@ -16,7 +16,7 @@
   
       <img src="vscod.png" width="200" height="180">
       
-      *Keys pressed: `<ctrl+r><ssh><Enter>`
+      *Keys pressed: `<ctrl+r><ssh><Enter>`*
       
   
   * Follow the instructions to download and install VScode.
