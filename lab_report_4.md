@@ -60,7 +60,7 @@
       
       <img src="tests-fail.png" width="650" height="180">
      
-      *Here, we can see two Junit tests were ran and one of them failed. Now, in the next step, we will edit the ListExamples.java file to fix the error in the "merge" method using just the command-line*
+      *Here, we can see two JUnit tests were ran and one of them failed. Now, in the next step, we will edit the ListExamples.java file to fix the error in the "merge" method using just the command-line*
 
 > ### Step 2 - Edit files in the repository:
 
@@ -68,7 +68,7 @@
   
       <img src="vim.png" width="400" height="25">
       
-      *Keys pressed: `<vim ><ListExamples.java><enter>` (Note: I have space after "vim")*
+      *Keys pressed: `<vim ListExamples.java><enter>`*
       <br>
       *I used the `vim` command to edit the "ListExamples.java" file.*
       
@@ -112,7 +112,7 @@
       
       <img src="tests-passed.png" width="650" height="120">
       
-      *Here, we can see two Junit tests were ran and both of them passed. So, we fixed the bug. Now, in the next step, we will commit the changes and push to the repository using the command-line only.*
+      *Here, we can see two JUnit tests were ran and both of them passed. So, we fixed the bug. Now, in the next step, we will commit the changes and push to the repository using the command-line only.*
       
 > ### Step 3 - Commit the changes and push to the repository:
 
@@ -143,4 +143,4 @@
       <img src="githubpage.png" width="750" height="350">
 
  
-> ## Congratulations! you have successfully completed all of the objectives.
+> ## Thank you for your time!
