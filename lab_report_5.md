@@ -20,12 +20,12 @@
 ![Error](student-error.png)
 
 
-      **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working           directory, even the last few commands you ran. Do your best to provide as much context as you can.**
+  * **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working           directory, even the last few commands you ran. Do your best to provide as much context as you can.**
         <br> I ran this command `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3` which runs the grade.sh script using a github repository. My current working directory is `/home/linux/ieng6/cs15lsp23/cs15lsp23ij/list-examples-grader`
  
 > ### Responses:
 
-  * **Tutor**: Hey! that's a good question. You are right, it seems like your `grade.sh` script file is potentially missing a statement. Try the following command to look into your grade.sh file: `vim grade.sh`. Afterwards, go to line #37 using this shortcut: `37G`
+  * **Tutor**: Hey! You are right, it seems like your `grade.sh` script file is potentially missing a statement. Try the following command to look into your grade.sh file: `vim grade.sh`. Afterwards, go to line #37 using this shortcut: `37G`
 
   * **Student**: Hey! thanks for your response. I tried the commands you told me and here is a screenshot of what I see:
 
