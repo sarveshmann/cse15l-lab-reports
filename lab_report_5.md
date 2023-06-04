@@ -7,6 +7,7 @@
 2. Reflection.
 
 ## **Part 1 - Debugging Scenario:**
+
 > ### Student EdStem post:
 
   * **Title**: Weird error while running bash script. 
@@ -38,6 +39,16 @@
   
 ![Error](student_fix.png)
 
+> ### Setup information:
+
+  * **File and directory structure**: Updated `list-examples-grader` from lab 9. Here's a link for it.
+
+
+## **Part 2 - Reflection:**
+
+During the second half of the quarter I learned so many new and useful things that I never even heard of before. The two most useful things that I now use almost in every programming assignment are `vim` and the `debugger`. It is really cool to know that I can pretty much do everything using just my terminal with `vim`. Not to mention, the `debugger` has solved so many of my problems while trying to fix my errors in a programming assignment. For instance, now, I don't have to manually add print statements everytime I am trying to fix a bug. I can just use the `debugger` and just type `print` to inspect any relative data. Finally, I would like to thank Professor Politz and all the staff for teaching me so many cool things.
+
+<br>
 
 > ## *Thank you for your time!*
 
