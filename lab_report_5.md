@@ -43,7 +43,53 @@
 
   * **File and directory structure**: Updated `list-examples-grader` from lab 9. Here's a [link](https://github.com/sarveshmann/list-examples-grader.git)
 for it.
+  * **Content before the fix**: The only change that I made to cause the error was inside `grade.sh` file. Below is the content of it:
 
+```
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+
+rm -rf student-submission
+rm -rf grading-area
+
+mkdir grading-area
+
+git clone $1 student-submission
+echo 'Finished cloning'
+
+# Draw a picture/take notes on the directory structure that's set up after
+# getting to this point
+
+# Then, add here code to compile and run, and do any post-processing of the
+# tests
+
+if [[ -f ./student-submission/ListExamples.java ]]
+then 
+    echo "Found ListExamples"
+
+    cp ./student-submission/ListExamples.java ./grading-area
+    cp ./TestListExamples.java ./grading-area
+    cp -r ./lib ./grading-area 
+    
+    cd ./grading-area
+
+    javac -cp $CPATH *java
+    if [[ $? -eq 0 ]]
+    then
+        echo "Files compiled successfully."
+        java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > result.txt
+        cat result.txt
+    else
+        echo "Files didn't compile."
+    
+    
+else 
+    echo "ListExamples couldn't be found."
+    exit 1
+fi
+```
+
+  * **Command ran to cause the error**: `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
+  * **Fix for the bug**: Add `fi` to end the inner `if/else` conditional before line #37.
 
 ## **Part 2 - Reflection:**
 
