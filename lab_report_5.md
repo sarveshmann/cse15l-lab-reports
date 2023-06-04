@@ -41,7 +41,8 @@
 
 > ### Setup information:
 
-  * **File and directory structure**: Updated `list-examples-grader` from lab 9. Here's a link for it.
+  * **File and directory structure**: Updated `list-examples-grader` from lab 9. Here's a [link](https://github.com/sarveshmann/list-examples-grader.git)
+for it.
 
 
 ## **Part 2 - Reflection:**
