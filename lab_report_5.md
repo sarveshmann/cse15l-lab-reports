@@ -15,14 +15,14 @@
     <br>I am using the terminal to run the program on a remote account on a MacBook. 
 
   * **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted         terminal output is also great. Avoid saying “it doesn't work”.**
-      <br>It tells me there is an error on line #37 with the `else` statement in my `grade.sh` file. I expected it to run the tests and give me the output.           Here is a screenshot:
+      <br>It tells me there is an error on line #37 with the `else` statement in my `grade.sh` file. I expected it to run the tests and give me the output. Here is a screenshot:
         
         
         <img src="student-error.png" width="400" height="50">
 
 
       **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working           directory, even the last few commands you ran. Do your best to provide as much context as you can.**
-        <br> I ran this command `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3` which runs the grade.sh script using a github repository.         My current working directory is `/home/linux/ieng6/cs15lsp23/cs15lsp23ij/list-examples-grader`
+        <br> I ran this command `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3` which runs the grade.sh script using a github repository. My current working directory is `/home/linux/ieng6/cs15lsp23/cs15lsp23ij/list-examples-grader`
  
 > ### Responses:
 
