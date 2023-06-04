@@ -32,7 +32,7 @@
 ![Error](student_vim.png)
 
         
-   * **Tutor**: It looks like you are missing the `fi` statement after your last inner `if/else` conditional. Go up to lines using the shortcut: `2k`. Then, go to the appropriate indentation using `h` to go left, `l` to go right. After going to the appropriate location, use `i` to start editing your file at that location and type `fi`, which ends your inner `if/else` condition. And, lastly, press `esc` to escape editing mode, and use the command `:wq` to save and quit. Now, you should be able to run your bash script. Let me know if it works now!
+   * **Tutor**: It looks like you are missing the `fi` statement after your last inner `if/else` conditional. Go up two lines using the shortcut: `2k`. Then, go to the appropriate indentation using `h` to go left, `l` to go right. After going to the appropriate location, use `i` to start editing your file at that location and type `fi`, which ends your inner `if/else` condition. And, lastly, press `esc` to escape editing mode, and use the command `:wq` to save and quit. Now, you should be able to run your bash script. Let me know if it works now!
 
   * **Student**: Hey! thank you so much! it works now. Here is a screenshot:
   
