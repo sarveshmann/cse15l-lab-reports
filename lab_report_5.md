@@ -41,8 +41,7 @@
 
 > ### Setup information:
 
-  * **File and directory structure**: Updated `list-examples-grader` from lab 9. Here's a [link](https://github.com/sarveshmann/list-examples-grader.git)
-for it.
+  * **File and directory structure**: Updated version of `list-examples-grader` from lab 9. Here's a link for it: [list-exmaples-grader](https://github.com/sarveshmann/list-examples-grader.git)
   * **Content before the fix**: The only change that I made to cause the error was inside `grade.sh` file. Below is the content of it:
 
 ```
